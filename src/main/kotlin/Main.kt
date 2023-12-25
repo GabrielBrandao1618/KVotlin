@@ -1,6 +1,6 @@
 package org.example
 
-import org.example.storage.Lsm;
+import org.example.storage.Lsm
 
 fun main() {
     val lsm = Lsm(1024, ".data")

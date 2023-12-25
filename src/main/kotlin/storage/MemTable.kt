@@ -6,7 +6,7 @@ class MemTable {
         table[key] = value
     }
     fun get(key: String): String? {
-        return table[key];
+        return table[key]
     }
     fun clear() {
         table.clear()

@@ -1,6 +1,6 @@
 package org.example.storage
 
-class Lsm(private val flushThreshold: Int, private val dataPath: String): AutoCloseable {
+class Lsm(private val flushThreshold: Int, dataPath: String): AutoCloseable {
     private var memTable = MemTable()
     private val ssTable = SSTable(dataPath)
     private fun flush() {
